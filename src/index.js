@@ -28,8 +28,7 @@ email.addEventListener('focusout', (e) => {
     deny.style.display = 'block';
     email.style.border = '2px solid red';
 
-    if (box.childNodes.length > 5) {
-    } else {
+    if (box.childNodes.length <= 5) {
       const h1 = document.createElement('h1');
       h1.classList.add('textStyle');
       h1.textContent = 'Please enter a valid email 🙏';
@@ -60,8 +59,7 @@ country.addEventListener('focusout', (e) => {
     deny.style.display = 'block';
     country.style.border = '2px solid red';
 
-    if (box.childNodes.length > 5) {
-    } else {
+    if (box.childNodes.length <= 5) {
       const h1 = document.createElement('h1');
       h1.classList.add('textStyle');
       h1.textContent = 'Please enter a Country 🙏';
@@ -92,8 +90,7 @@ zipcode.addEventListener('focusout', (e) => {
     deny.style.display = 'block';
     zipcode.style.border = '2px solid red';
 
-    if (box.childNodes.length > 5) {
-    } else {
+    if (box.childNodes.length <= 5) {
       const h1 = document.createElement('h1');
       h1.classList.add('textStyle');
       h1.textContent = 'Please enter a valid zipcode 🙏';
@@ -124,8 +121,7 @@ password.addEventListener('focusout', (e) => {
     deny.style.display = 'block';
     password.style.border = '2px solid red';
 
-    if (box.childNodes.length > 5) {
-    } else {
+    if (box.childNodes.length <= 5) {
       const h1 = document.createElement('h1');
       h1.classList.add('textStyle');
       h1.textContent = 'Password must have a min-length of 10 🙏';
@@ -166,8 +162,7 @@ confirm.addEventListener('focusout', (e) => {
     deny.style.display = 'block';
     confirm.style.border = '2px solid red';
 
-    if (box.childNodes.length > 5) {
-    } else {
+    if (box.childNodes.length <= 5) {
       const h1 = document.createElement('h1');
       h1.classList.add('textStyle');
       h1.textContent = 'Password must have a min-length of 10 🙏';
