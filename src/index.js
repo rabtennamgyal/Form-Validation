@@ -139,14 +139,7 @@ confirm.addEventListener('focusout', (e) => {
   const first = password.value;
   const second = confirm.value;
 
-  if (first !== second) {
-    const h1 = document.createElement('h1');
-    h1.classList.add('textStyle');
-    h1.textContent = 'Password must match 😎';
-    box.appendChild(h1);
-  }
-
-  if (confirm.checkValidity()) {
+  if (first === second) {
     approve.style.display = 'block';
     deny.style.display = 'none';
     confirm.style.border = '2px solid #3aff3a';
@@ -158,6 +151,7 @@ confirm.addEventListener('focusout', (e) => {
       }
     }
   } else {
+    // eslint-disable-next-line no-lonely-if
     approve.style.display = 'none';
     deny.style.display = 'block';
     confirm.style.border = '2px solid red';
@@ -165,7 +159,7 @@ confirm.addEventListener('focusout', (e) => {
     if (box.childNodes.length <= 5) {
       const h1 = document.createElement('h1');
       h1.classList.add('textStyle');
-      h1.textContent = 'Password must have a min-length of 10 🙏';
+      h1.textContent = 'Password must match 😎';
       box.appendChild(h1);
     }
   }
