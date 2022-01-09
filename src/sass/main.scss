@@ -84,11 +84,11 @@ html, body {
             button {
                 cursor: pointer;
                 height: 3rem;
-                width: 10rem;
+                width: 80%;
                 border: none;
                 border-radius: 20px;
                 color: #ffffff;
-                border: solid .1px #000;
+                border: solid .1px #fff;
                 background: #ff6842;
                 font-family: cursive, monospace, sans-serif;
 
@@ -97,13 +97,13 @@ html, body {
                     color: #fff;
                     transition: 300ms ease-in-out;
                     box-shadow:     
-                    inset 0 0 50px #ff6842,      /* inner white */
-                    inset 20px 0 80px #ff6842,   /* inner left magenta short */
-                    inset -20px 0 80px #ff6842,  /* inner right cyan short */
-                    inset 20px 0 300px #ff6842,  /* inner left magenta broad */
-                    inset -20px 0 300px #ff6842, /* inner right cyan broad */
-                    0 0 50px #ff6842,            /* outer white */
-                    -10px 0 80px #ff6842,        /* outer left magenta */
+                    inset 0 0 50px #ff6842,      
+                    inset 20px 0 80px #ff6842, 
+                    inset -20px 0 80px #ff6842, 
+                    inset 20px 0 300px #ff6842, 
+                    inset -20px 0 300px #ff6842, 
+                    0 0 50px #ff6842,            
+                    -10px 0 80px #ff6842, 
                     10px 0 80px #ff6842;  
                 }
             }
