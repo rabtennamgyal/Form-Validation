@@ -1,5 +1,3 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-console */
 import './sass/main.scss';
 
 const submit = document.getElementById('submit');
